@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+
 import * as Styled from './styles';
 
 const App: FC = () => {
