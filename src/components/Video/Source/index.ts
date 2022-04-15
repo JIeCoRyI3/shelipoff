@@ -1,3 +1,3 @@
-import Sources from './Source';
+import Source from './Source';
 
-export default Sources;
+export default Source;
