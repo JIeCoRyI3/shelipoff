@@ -1,4 +1,4 @@
-import Source from 'components/Source';
+import Source from 'components/Video/Source';
 import Video from 'components/Video';
 import React, { FC } from 'react';
 
