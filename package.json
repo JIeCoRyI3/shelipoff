@@ -1,7 +1,7 @@
 {
 	"name": "vite-reactts-eslint-prettier",
 	"version": "0.0.0",
-	"homepage": "https://JIeCoRyI3.github.io",
+	"homepage": "/shelipoff",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
