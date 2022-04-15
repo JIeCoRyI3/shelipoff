@@ -6,14 +6,14 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-dkzDqf jlXTiK"
+        class="sc-dkzDqf"
       >
         <video
           autoplay=""
-          class="sc-gsnTZi iBjVGc"
+          class="sc-gsnTZi dXQNvh"
         >
           <source
-            class="sc-bczRLJ fkisPa"
+            class="sc-bczRLJ"
             src="test-file-stub"
           />
         </video>
@@ -22,14 +22,14 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-dkzDqf jlXTiK"
+      class="sc-dkzDqf"
     >
       <video
         autoplay=""
-        class="sc-gsnTZi iBjVGc"
+        class="sc-gsnTZi dXQNvh"
       >
         <source
-          class="sc-bczRLJ fkisPa"
+          class="sc-bczRLJ"
           src="test-file-stub"
         />
       </video>
