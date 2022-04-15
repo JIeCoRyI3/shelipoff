@@ -6,35 +6,67 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-dkzDqf"
+        class="sc-gKXOVf EVioZ"
       >
-        <video
-          autoplay=""
-          class="sc-gsnTZi dXQNvh"
-          loop=""
+        <section
+          class="sc-jSMfEi kmOFUb"
+        />
+        <section
+          class="sc-hKMtZM UMafu"
         >
-          <source
-            class="sc-bczRLJ"
-            src="test-file-stub"
-          />
-        </video>
+          <div
+            class="sc-eCYdqJ eZKFMq"
+          >
+            <video
+              autoplay=""
+              class="sc-gsnTZi iZFQrY"
+              loop=""
+            >
+              <source
+                class="sc-bczRLJ"
+                src="test-file-stub"
+              />
+            </video>
+            <div
+              class="sc-dkzDqf iRvvDe"
+            >
+              mocked TypeIt
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-dkzDqf"
+      class="sc-gKXOVf EVioZ"
     >
-      <video
-        autoplay=""
-        class="sc-gsnTZi dXQNvh"
-        loop=""
+      <section
+        class="sc-jSMfEi kmOFUb"
+      />
+      <section
+        class="sc-hKMtZM UMafu"
       >
-        <source
-          class="sc-bczRLJ"
-          src="test-file-stub"
-        />
-      </video>
+        <div
+          class="sc-eCYdqJ eZKFMq"
+        >
+          <video
+            autoplay=""
+            class="sc-gsnTZi iZFQrY"
+            loop=""
+          >
+            <source
+              class="sc-bczRLJ"
+              src="test-file-stub"
+            />
+          </video>
+          <div
+            class="sc-dkzDqf iRvvDe"
+          >
+            mocked TypeIt
+          </div>
+        </div>
+      </section>
     </div>
   </div>,
   "debug": [Function],
