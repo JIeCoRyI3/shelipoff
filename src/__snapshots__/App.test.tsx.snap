@@ -3,68 +3,242 @@
 exports[`App Component should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .c4 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.c6 {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  font-size: 90px;
+  font-family: 'BioRhyme',serif;
+  font-family: 'Stint Ultra Expanded',cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  z-index: 3;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.c3 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.c1 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.c5 {
+  font-size: 20px;
+  color: white;
+  font-family: 'BioRhyme',serif;
+  font-family: 'Stint Ultra Expanded',cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.2);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-animation: ripple 2600ms infinite;
+  animation: ripple 2600ms infinite;
+  border: none;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.c5:hover {
+  background-color: rgba(0,0,0,0.6);
+  -webkit-transform: translate(-50%,-50%) scale(1.2);
+  -ms-transform: translate(-50%,-50%) scale(1.2);
+  transform: translate(-50%,-50%) scale(1.2);
+}
+
+.c0 {
+  min-height: 500vh;
+}
+
+<body>
     <div>
       <div
-        class="sc-gKXOVf EVioZ"
+        class="c0"
       >
         <section
-          class="sc-jSMfEi kmOFUb"
+          class="c1"
         />
         <section
-          class="sc-hKMtZM UMafu"
+          class="c2"
+          tabindex="0"
         >
           <div
-            class="sc-eCYdqJ eZKFMq"
+            class="c3"
           >
             <video
               autoplay=""
-              class="sc-gsnTZi iZFQrY"
+              class="c4"
               loop=""
             >
               <source
-                class="sc-bczRLJ"
+                class=""
                 src="test-file-stub"
               />
             </video>
-            <div
-              class="sc-dkzDqf iRvvDe"
+            <button
+              class="c5"
             >
-              mocked TypeIt
-            </div>
+              Click me
+            </button>
+            <div
+              class="c6"
+            />
           </div>
         </section>
       </div>
     </div>
   </body>,
-  "container": <div>
+  "container": .c4 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.c6 {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  font-size: 90px;
+  font-family: 'BioRhyme',serif;
+  font-family: 'Stint Ultra Expanded',cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  z-index: 3;
+}
+
+.c2 {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.c3 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.c1 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.c5 {
+  font-size: 20px;
+  color: white;
+  font-family: 'BioRhyme',serif;
+  font-family: 'Stint Ultra Expanded',cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.2);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-animation: ripple 2600ms infinite;
+  animation: ripple 2600ms infinite;
+  border: none;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.c5:hover {
+  background-color: rgba(0,0,0,0.6);
+  -webkit-transform: translate(-50%,-50%) scale(1.2);
+  -ms-transform: translate(-50%,-50%) scale(1.2);
+  transform: translate(-50%,-50%) scale(1.2);
+}
+
+.c0 {
+  min-height: 500vh;
+}
+
+<div>
     <div
-      class="sc-gKXOVf EVioZ"
+      class="c0"
     >
       <section
-        class="sc-jSMfEi kmOFUb"
+        class="c1"
       />
       <section
-        class="sc-hKMtZM UMafu"
+        class="c2"
+        tabindex="0"
       >
         <div
-          class="sc-eCYdqJ eZKFMq"
+          class="c3"
         >
           <video
             autoplay=""
-            class="sc-gsnTZi iZFQrY"
+            class="c4"
             loop=""
           >
             <source
-              class="sc-bczRLJ"
+              class=""
               src="test-file-stub"
             />
           </video>
-          <div
-            class="sc-dkzDqf iRvvDe"
+          <button
+            class="c5"
           >
-            mocked TypeIt
-          </div>
+            Click me
+          </button>
+          <div
+            class="c6"
+          />
         </div>
       </section>
     </div>
