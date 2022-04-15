@@ -2,7 +2,7 @@ import{s,R as e,r as p,T as x,a as h}from"./vendor.a3b42e18.js";const b=function
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
-`,f=({children:r})=>(p.exports.useEffect(()=>{v(r,f.name,d.name)},[]),e.createElement(E,{autoPlay:!0,muted:!0,loop:!0},r));var w="/assets/keyboard-sound.2985eba1.mp3",S="/assets/big-video-black.5e7dcfe0.mp4",k="/assets/small-video-black.c5d10b2a.mp4";const C=s.div`
+`,f=({children:r})=>(p.exports.useEffect(()=>{v(r,f.name,d.name)},[]),e.createElement(E,{autoPlay:!0,muted:!0,loop:!0},r));var w="./assets/keyboard-sound.2985eba1.mp3",S="./assets/big-video-black.5e7dcfe0.mp4",k="./assets/small-video-black.c5d10b2a.mp4";const C=s.div`
 	position: absolute;
 	width: fit-content;
 	top: 50%;
