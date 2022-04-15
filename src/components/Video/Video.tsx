@@ -15,7 +15,7 @@ const Video: FC<IProps> = ({ children }) => {
 	}, []);
 
 	return (
-		<Styled.Video autoPlay muted>
+		<Styled.Video autoPlay muted loop>
 			{children}
 		</Styled.Video>
 	);
