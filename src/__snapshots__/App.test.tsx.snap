@@ -3,13 +3,106 @@
 exports[`App Component should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .c4 {
+  "baseElement": .c1 {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.c4 {
+  color: white;
+  font-family: 'Fredoka One',cursive;
+  font-size: 20px;
+  margin-right: 80px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.c6 > * {
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c6 > *:nth-child(1) {
+  -webkit-transform: scale(0.2) translateY(-77%);
+  -ms-transform: scale(0.2) translateY(-77%);
+  transform: scale(0.2) translateY(-77%);
+}
+
+.c6 > *:nth-child(2) {
+  margin-left: -100%;
+  -webkit-transform: scale(0.6) translateY(-77%);
+  -ms-transform: scale(0.6) translateY(-77%);
+  transform: scale(0.6) translateY(-77%);
+}
+
+.c10 {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
 }
 
-.c6 {
+.c12 {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -27,25 +120,25 @@ Object {
   z-index: 3;
 }
 
-.c2 {
+.c8 {
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
 }
 
-.c3 {
+.c9 {
   position: relative;
   height: 100vh;
   width: 100vw;
 }
 
-.c1 {
+.c7 {
   width: 100vw;
   height: 100vh;
 }
 
-.c5 {
+.c11 {
   font-size: 30px;
   color: white;
   font-family: 'Roboto Mono',monospace;
@@ -73,7 +166,7 @@ Object {
   transform-origin: center;
 }
 
-.c5:hover {
+.c11:hover {
   background-color: rgba(0,0,0,0.6);
   -webkit-transform: translate(-50%,-50%) scale(1.2);
   -ms-transform: translate(-50%,-50%) scale(1.2);
@@ -82,26 +175,332 @@ Object {
 
 .c0 {
   min-height: 500vh;
+  background-color: grey;
+  width: 100vw;
 }
 
 <body>
     <div>
       <div
+        class=""
+      >
+        <main
+          class="c0"
+        >
+          <header
+            class="c1"
+          >
+            <div
+              class="c2"
+            >
+              <nav
+                class="c3"
+              >
+                <a
+                  class="c4"
+                >
+                  Home
+                </a>
+                <a
+                  class="c4"
+                >
+                  PX Switch
+                </a>
+                <a
+                  class="c4"
+                >
+                  Interview FAQ
+                </a>
+              </nav>
+              <nav
+                class="c5"
+              >
+                <a
+                  class="c4"
+                >
+                  Home
+                </a>
+                <div
+                  class="c6"
+                >
+                  <svgrurl />
+                  <svgrurl />
+                </div>
+              </nav>
+            </div>
+          </header>
+          <section
+            class="c7"
+          />
+          <section
+            class="c8"
+            tabindex="0"
+          >
+            <div
+              class="c9"
+            >
+              <video
+                autoplay=""
+                class="c10"
+                loop=""
+              >
+                <source
+                  class=""
+                  src="test-file-stub"
+                />
+              </video>
+              <button
+                class="c11"
+              >
+                Click me
+              </button>
+              <div
+                class="c12"
+              />
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>,
+  "container": .c1 {
+  position: fixed;
+  width: 100vw;
+  height: 40px;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.c4 {
+  color: white;
+  font-family: 'Fredoka One',cursive;
+  font-size: 20px;
+  margin-right: 80px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.c6 > * {
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c6 > *:nth-child(1) {
+  -webkit-transform: scale(0.2) translateY(-77%);
+  -ms-transform: scale(0.2) translateY(-77%);
+  transform: scale(0.2) translateY(-77%);
+}
+
+.c6 > *:nth-child(2) {
+  margin-left: -100%;
+  -webkit-transform: scale(0.6) translateY(-77%);
+  -ms-transform: scale(0.6) translateY(-77%);
+  transform: scale(0.6) translateY(-77%);
+}
+
+.c10 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.c12 {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  font-size: 100px;
+  font-family: 'Roboto Mono',monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  z-index: 3;
+}
+
+.c8 {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.c9 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.c7 {
+  width: 100vw;
+  height: 100vh;
+}
+
+.c11 {
+  font-size: 30px;
+  color: white;
+  font-family: 'Roboto Mono',monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.2);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-animation: ripple 2600ms infinite;
+  animation: ripple 2600ms infinite;
+  border: none;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.c11:hover {
+  background-color: rgba(0,0,0,0.6);
+  -webkit-transform: translate(-50%,-50%) scale(1.2);
+  -ms-transform: translate(-50%,-50%) scale(1.2);
+  transform: translate(-50%,-50%) scale(1.2);
+}
+
+.c0 {
+  min-height: 500vh;
+  background-color: grey;
+  width: 100vw;
+}
+
+<div>
+    <div
+      class=""
+    >
+      <main
         class="c0"
       >
-        <section
+        <header
           class="c1"
+        >
+          <div
+            class="c2"
+          >
+            <nav
+              class="c3"
+            >
+              <a
+                class="c4"
+              >
+                Home
+              </a>
+              <a
+                class="c4"
+              >
+                PX Switch
+              </a>
+              <a
+                class="c4"
+              >
+                Interview FAQ
+              </a>
+            </nav>
+            <nav
+              class="c5"
+            >
+              <a
+                class="c4"
+              >
+                Home
+              </a>
+              <div
+                class="c6"
+              >
+                <svgrurl />
+                <svgrurl />
+              </div>
+            </nav>
+          </div>
+        </header>
+        <section
+          class="c7"
         />
         <section
-          class="c2"
+          class="c8"
           tabindex="0"
         >
           <div
-            class="c3"
+            class="c9"
           >
             <video
               autoplay=""
-              class="c4"
+              class="c10"
               loop=""
             >
               <source
@@ -110,133 +509,16 @@ Object {
               />
             </video>
             <button
-              class="c5"
+              class="c11"
             >
               Click me
             </button>
             <div
-              class="c6"
+              class="c12"
             />
           </div>
         </section>
-      </div>
-    </div>
-  </body>,
-  "container": .c4 {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.c6 {
-  position: absolute;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  font-size: 100px;
-  font-family: 'Roboto Mono',monospace;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: white;
-  z-index: 3;
-}
-
-.c2 {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-}
-
-.c3 {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-}
-
-.c1 {
-  width: 100vw;
-  height: 100vh;
-}
-
-.c5 {
-  font-size: 30px;
-  color: white;
-  font-family: 'Roboto Mono',monospace;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  cursor: pointer;
-  background-color: rgba(0,0,0,0.2);
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  z-index: 3;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  -webkit-animation: ripple 2600ms infinite;
-  animation: ripple 2600ms infinite;
-  border: none;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-}
-
-.c5:hover {
-  background-color: rgba(0,0,0,0.6);
-  -webkit-transform: translate(-50%,-50%) scale(1.2);
-  -ms-transform: translate(-50%,-50%) scale(1.2);
-  transform: translate(-50%,-50%) scale(1.2);
-}
-
-.c0 {
-  min-height: 500vh;
-}
-
-<div>
-    <div
-      class="c0"
-    >
-      <section
-        class="c1"
-      />
-      <section
-        class="c2"
-        tabindex="0"
-      >
-        <div
-          class="c3"
-        >
-          <video
-            autoplay=""
-            class="c4"
-            loop=""
-          >
-            <source
-              class=""
-              src="test-file-stub"
-            />
-          </video>
-          <button
-            class="c5"
-          >
-            Click me
-          </button>
-          <div
-            class="c6"
-          />
-        </div>
-      </section>
+      </main>
     </div>
   </div>,
   "debug": [Function],
