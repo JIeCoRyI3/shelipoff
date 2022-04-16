@@ -1,8 +1,10 @@
+import { Context } from 'App';
 import Video from 'components/Video';
 import Source from 'components/Video/Source';
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useContext, useEffect, useState } from 'react';
 import keyboardSound from 'resources/sounds/keyboard-sound.mp3';
 import bigVideoBlack from 'resources/videos/big-video-black.mp4';
+import bigVideoWhite from 'resources/videos/big-video-white.mp4';
 import smallVideoBlack from 'resources/videos/small-video-black.mp4';
 import TypeIt from 'typeit-react';
 
@@ -12,6 +14,7 @@ const HeroSection: FC = () => {
 	const [isTextShown, setIsTextShown] = useState<boolean>(false);
 	const [sound] = useState<HTMLAudioElement>(new Audio(keyboardSound));
 	const [hoverCount, setHoverCount] = useState<number>(4);
+	const { darkMode } = useContext(Context);
 
 	let timeoutId1: number, timeoutId2: number;
 
@@ -55,18 +58,30 @@ const HeroSection: FC = () => {
 			<Styled.Space />
 			<Styled.HeroSection tabIndex={0}>
 				<Styled.RelativeContainer>
-					<Video>
-						<Source
-							src={bigVideoBlack}
-							mediaMaxWidth={3000}
-							mediaMinWidth={1201}
-						/>
-						<Source
-							src={smallVideoBlack}
-							mediaMaxWidth={1200}
-							mediaMinWidth={300}
-						/>
-					</Video>
+					{darkMode && (
+						<Video>
+							<Source
+								src={bigVideoBlack}
+								mediaMaxWidth={3000}
+								mediaMinWidth={1201}
+							/>
+							<Source
+								src={smallVideoBlack}
+								mediaMaxWidth={1200}
+								mediaMinWidth={300}
+							/>
+						</Video>
+					)}
+
+					{!darkMode && (
+						<Video>
+							<Source
+								src={bigVideoWhite}
+								mediaMaxWidth={3000}
+								mediaMinWidth={1201}
+							/>
+						</Video>
+					)}
 
 					{!isTextShown && (
 						<Styled.Button

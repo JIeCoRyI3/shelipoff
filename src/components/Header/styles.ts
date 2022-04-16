@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 
-export const Header = styled.header`
+export const Link = styled.a`
+	font-family: 'Fredoka One', cursive;
+	font-size: 20px;
+	margin-right: 80px;
+	text-transform: uppercase;
+	transition: 0.4s;
+	cursor: pointer;
+`;
+
+export const Header = styled.header<{ darkMode: boolean }>`
 	position: fixed;
 	width: 100vw;
 	height: 40px;
@@ -10,7 +19,13 @@ export const Header = styled.header`
 	display: flex;
 	justify-content: center;
 	padding: 20px 0;
-	background-color: rgba(0, 0, 0, 0.2);
+	transition: 0.4s;
+	background-color: ${(props) =>
+		props.darkMode ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 255, 255, 0.2)'};
+
+	& ${Link} {
+		color: ${(props) => (props.darkMode ? 'white' : 'black')};
+	}
 `;
 
 export const HeaderContainer = styled.div`
@@ -29,15 +44,6 @@ export const Rightside = styled.nav`
 	display: flex;
 	align-items: center;
 	height: 100%;
-`;
-
-export const Link = styled.a`
-	color: white;
-	font-family: 'Fredoka One', cursive;
-	font-size: 20px;
-	margin-right: 80px;
-	text-transform: uppercase;
-	cursor: pointer;
 `;
 
 export const SVG = styled.div<{ darkMode: boolean }>`

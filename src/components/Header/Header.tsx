@@ -1,14 +1,15 @@
-import React, { FC, useState } from 'react';
+import { Context } from 'App';
+import React, { FC, useContext } from 'react';
 import DarkIcon from 'resources/images/darkMode.svg?component';
 import LightIcon from 'resources/images/lightMode.svg?component';
 
 import * as Styled from './styles';
 
 const Header: FC = () => {
-	const [darkMode, setDarkMode] = useState<boolean>(true);
+	const { darkMode, toggle } = useContext(Context);
 
 	return (
-		<Styled.Header>
+		<Styled.Header darkMode={darkMode}>
 			<Styled.HeaderContainer>
 				<Styled.Leftside>
 					<Styled.Link>Home</Styled.Link>
@@ -19,8 +20,8 @@ const Header: FC = () => {
 				<Styled.Rightside>
 					<Styled.Link>Home</Styled.Link>
 					<Styled.SVG darkMode={darkMode}>
-						<DarkIcon onClick={() => setDarkMode(true)} />
-						<LightIcon onClick={() => setDarkMode(false)} />
+						<DarkIcon onClick={() => toggle()} />
+						<LightIcon onClick={() => toggle()} />
 					</Styled.SVG>
 				</Styled.Rightside>
 			</Styled.HeaderContainer>
