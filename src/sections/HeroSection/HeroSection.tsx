@@ -82,15 +82,15 @@ const HeroSection: FC = () => {
 								getBeforeInit={(instance) => {
 									instance
 										.type('Hi! Kixill')
-										.pause(350)
+										.pause(450)
 										.move(-3)
-										.pause(250)
+										.pause(350)
 										.delete(1)
-										.pause(400)
+										.pause(420)
 										.type('r')
 										.pause(450)
 										.move(3)
-										.pause(250)
+										.pause(300)
 										.type(' Here.')
 										.pause(2100)
 										.delete(20)
@@ -101,7 +101,7 @@ const HeroSection: FC = () => {
 										.move(-13)
 										.type('ce')
 										.move(5)
-										.pause(250)
+										.pause(350)
 										.delete(1)
 										.type('m')
 										.move(15);

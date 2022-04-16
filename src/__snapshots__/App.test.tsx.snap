@@ -19,10 +19,9 @@ Object {
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  font-size: 90px;
-  font-family: 'BioRhyme',serif;
-  font-family: 'Stint Ultra Expanded',cursive;
-  font-weight: bold;
+  font-size: 100px;
+  font-family: 'Roboto Mono',monospace;
+  font-weight: 400;
   text-transform: uppercase;
   color: white;
   z-index: 3;
@@ -47,10 +46,9 @@ Object {
 }
 
 .c5 {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
-  font-family: 'BioRhyme',serif;
-  font-family: 'Stint Ultra Expanded',cursive;
+  font-family: 'Roboto Mono',monospace;
   font-weight: bold;
   text-transform: uppercase;
   position: absolute;
@@ -140,10 +138,9 @@ Object {
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  font-size: 90px;
-  font-family: 'BioRhyme',serif;
-  font-family: 'Stint Ultra Expanded',cursive;
-  font-weight: bold;
+  font-size: 100px;
+  font-family: 'Roboto Mono',monospace;
+  font-weight: 400;
   text-transform: uppercase;
   color: white;
   z-index: 3;
@@ -168,10 +165,9 @@ Object {
 }
 
 .c5 {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
-  font-family: 'BioRhyme',serif;
-  font-family: 'Stint Ultra Expanded',cursive;
+  font-family: 'Roboto Mono',monospace;
   font-weight: bold;
   text-transform: uppercase;
   position: absolute;

@@ -6,10 +6,9 @@ export const TextContainer = styled.div`
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 90px;
-	font-family: 'BioRhyme', serif;
-	font-family: 'Stint Ultra Expanded', cursive;
-	font-weight: bold;
+	font-size: 100px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
 	text-transform: uppercase;
 	color: white;
 	z-index: 3;
@@ -34,10 +33,9 @@ export const Space = styled.section`
 `;
 
 export const Button = styled.button`
-	font-size: 20px;
+	font-size: 30px;
 	color: white;
-	font-family: 'BioRhyme', serif;
-	font-family: 'Stint Ultra Expanded', cursive;
+	font-family: 'Roboto Mono', monospace;
 	font-weight: bold;
 	text-transform: uppercase;
 	position: absolute;
