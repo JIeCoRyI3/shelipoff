@@ -63,7 +63,7 @@ var k=Object.defineProperty;var f=Object.getOwnPropertySymbols;var b=Object.prot
 	height: 100vh;
 	object-fit: cover;
 	opacity: 0.2;
-`,g=({children:e})=>(t.exports.useEffect(()=>{F(e,g.name,m.name)},[]),r.createElement(I,{autoPlay:!0,muted:!0,loop:!0},e));var R="/assets/keyboard-sound.2985eba1.mp3",j="/assets/big-video-black.5e7dcfe0.mp4",O="/assets/big-video-white.6ffcab15.mp4",P="/assets/small-video-black.c5d10b2a.mp4",_="/assets/small-video-white.487392f0.mp4";const D=l.div`
+`,g=({children:e})=>(t.exports.useEffect(()=>{F(e,g.name,m.name)},[]),r.createElement(I,{autoPlay:!0,muted:!0,loop:!0},e));var R="./assets/keyboard-sound.2985eba1.mp3",j="./assets/big-video-black.5e7dcfe0.mp4",O="./assets/big-video-white.6ffcab15.mp4",P="./assets/small-video-black.c5d10b2a.mp4",_="./assets/small-video-white.487392f0.mp4";const D=l.div`
 	position: absolute;
 	width: fit-content;
 	top: 50%;
