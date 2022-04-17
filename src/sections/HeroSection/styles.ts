@@ -1,3 +1,4 @@
+import { Video } from 'components/Video/styles';
 import ThemeType from 'helpers/types/ThemeType';
 import styled from 'styled-components';
 
@@ -14,8 +15,9 @@ export const TextContainer = styled.div<ThemeType>`
 	z-index: 3;
 
 	& * {
+		transition: 0.4s;
 		color: ${(props) =>
-		props.darkMode ? 'white' : 'black'};
+		props.darkMode ? 'white' : 'black'} !important;
 	}
 `;
 
@@ -26,10 +28,25 @@ export const HeroSection = styled.section`
 	left: 0;
 `;
 
-export const RelativeContainer = styled.div`
+export const RelativeContainer = styled.div<ThemeType>`
 	position: relative;
 	height: 100vh;
 	width: 100vw;
+
+	& ${Video} {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: 1s;
+	}
+
+	& ${Video}:first-of-type {
+		opacity: ${props => props.darkMode ? 0.3 : 0};
+	}
+
+	& ${Video}:not(:first-of-type) {
+		opacity: ${props => props.darkMode ? 0 : 0.3};
+	}
 `;
 
 export const Space = styled.section`

@@ -103,14 +103,13 @@ Object {
   transform: scale(0.6) translateY(-77%);
 }
 
-.c12 {
+.c13 {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  opacity: 0.2;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -127,8 +126,10 @@ Object {
   z-index: 3;
 }
 
-.c14 * {
-  color: white;
+.c15 * {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white !important;
 }
 
 .c10 {
@@ -144,12 +145,28 @@ Object {
   width: 100vw;
 }
 
+.c11 .c12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.c11 .c12:first-of-type {
+  opacity: 0.3;
+}
+
+.c11 .c12:not(:first-of-type) {
+  opacity: 0;
+}
+
 .c9 {
   width: 100vw;
   height: 100vh;
 }
 
-.c13 {
+.c14 {
   font-size: 30px;
   color: white;
   font-family: 'Roboto Mono',monospace;
@@ -178,7 +195,7 @@ Object {
   box-shadow: 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.1), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.2), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.4), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.6);
 }
 
-.c13:hover {
+.c14:hover {
   background-color: rgba(0,0,0,0.6);
   -webkit-transform: translate(-50%,-50%) scale(1.2);
   -ms-transform: translate(-50%,-50%) scale(1.2);
@@ -191,6 +208,8 @@ Object {
 }
 
 .c0 {
+  -webkit-transition: 1s;
+  transition: 1s;
   background-color: black;
 }
 
@@ -256,7 +275,17 @@ Object {
             >
               <video
                 autoplay=""
-                class="c12"
+                class="c12 c13"
+                loop=""
+              >
+                <source
+                  class=""
+                  src="test-file-stub"
+                />
+              </video>
+              <video
+                autoplay=""
+                class="c12 c13"
                 loop=""
               >
                 <source
@@ -265,12 +294,12 @@ Object {
                 />
               </video>
               <button
-                class="c13"
+                class="c14"
               >
                 Click me
               </button>
               <div
-                class="c14"
+                class="c15"
               />
             </div>
           </section>
@@ -378,14 +407,13 @@ Object {
   transform: scale(0.6) translateY(-77%);
 }
 
-.c12 {
+.c13 {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  opacity: 0.2;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -402,8 +430,10 @@ Object {
   z-index: 3;
 }
 
-.c14 * {
-  color: white;
+.c15 * {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white !important;
 }
 
 .c10 {
@@ -419,12 +449,28 @@ Object {
   width: 100vw;
 }
 
+.c11 .c12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.c11 .c12:first-of-type {
+  opacity: 0.3;
+}
+
+.c11 .c12:not(:first-of-type) {
+  opacity: 0;
+}
+
 .c9 {
   width: 100vw;
   height: 100vh;
 }
 
-.c13 {
+.c14 {
   font-size: 30px;
   color: white;
   font-family: 'Roboto Mono',monospace;
@@ -453,7 +499,7 @@ Object {
   box-shadow: 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.1), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.2), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.4), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.6);
 }
 
-.c13:hover {
+.c14:hover {
   background-color: rgba(0,0,0,0.6);
   -webkit-transform: translate(-50%,-50%) scale(1.2);
   -ms-transform: translate(-50%,-50%) scale(1.2);
@@ -466,6 +512,8 @@ Object {
 }
 
 .c0 {
+  -webkit-transition: 1s;
+  transition: 1s;
   background-color: black;
 }
 
@@ -530,7 +578,17 @@ Object {
           >
             <video
               autoplay=""
-              class="c12"
+              class="c12 c13"
+              loop=""
+            >
+              <source
+                class=""
+                src="test-file-stub"
+              />
+            </video>
+            <video
+              autoplay=""
+              class="c12 c13"
               loop=""
             >
               <source
@@ -539,12 +597,12 @@ Object {
               />
             </video>
             <button
-              class="c13"
+              class="c14"
             >
               Click me
             </button>
             <div
-              class="c14"
+              class="c15"
             />
           </div>
         </section>

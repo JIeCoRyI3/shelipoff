@@ -58,36 +58,32 @@ const HeroSection: FC = () => {
 		<>
 			<Styled.Space />
 			<Styled.HeroSection tabIndex={0}>
-				<Styled.RelativeContainer>
-					{darkMode && (
-						<Video>
-							<Source
-								src={bigVideoBlack}
-								mediaMaxWidth={3000}
-								mediaMinWidth={1201}
-							/>
-							<Source
-								src={smallVideoBlack}
-								mediaMaxWidth={1200}
-								mediaMinWidth={300}
-							/>
-						</Video>
-					)}
-
-					{!darkMode && (
-						<Video>
-							<Source
-								src={bigVideoWhite}
-								mediaMaxWidth={3000}
-								mediaMinWidth={1201}
-							/>
-							<Source
-								src={smallVideoWhite}
-								mediaMaxWidth={1200}
-								mediaMinWidth={300}
-							/>
-						</Video>
-					)}
+				<Styled.RelativeContainer darkMode={darkMode}>
+					<Video>
+						<Source
+							src={bigVideoBlack}
+							mediaMaxWidth={3000}
+							mediaMinWidth={1201}
+						/>
+						<Source
+							src={smallVideoBlack}
+							mediaMaxWidth={1200}
+							mediaMinWidth={300}
+						/>
+					</Video>
+				
+					<Video>
+						<Source
+							src={bigVideoWhite}
+							mediaMaxWidth={3000}
+							mediaMinWidth={1201}
+						/>
+						<Source
+							src={smallVideoWhite}
+							mediaMaxWidth={1200}
+							mediaMinWidth={300}
+						/>
+					</Video>
 
 					{!isTextShown && (
 						<Styled.Button

@@ -4,5 +4,5 @@ export const Video = styled.video`
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
-	opacity: 0.2;
+	
 `;
