@@ -1,9 +1,12 @@
+import { ColorMode } from 'App';
 import Video from 'components/Video';
 import Source from 'components/Video/Source';
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useContext, useEffect, useState } from 'react';
 import keyboardSound from 'resources/sounds/keyboard-sound.mp3';
 import bigVideoBlack from 'resources/videos/big-video-black.mp4';
+import bigVideoWhite from 'resources/videos/big-video-white.mp4';
 import smallVideoBlack from 'resources/videos/small-video-black.mp4';
+import smallVideoWhite from 'resources/videos/small-video-white.mp4';
 import TypeIt from 'typeit-react';
 
 import * as Styled from './styles';
@@ -11,7 +14,8 @@ import * as Styled from './styles';
 const HeroSection: FC = () => {
 	const [isTextShown, setIsTextShown] = useState<boolean>(false);
 	const [sound] = useState<HTMLAudioElement>(new Audio(keyboardSound));
-	const [hoverCount, setHoverCount] = useState<number>(4);
+	const [hoverCount, setHoverCount] = useState<number>(2);
+	const { darkMode } = useContext(ColorMode);
 
 	let timeoutId1: number, timeoutId2: number;
 
@@ -55,42 +59,60 @@ const HeroSection: FC = () => {
 			<Styled.Space />
 			<Styled.HeroSection tabIndex={0}>
 				<Styled.RelativeContainer>
-					<Video>
-						<Source
-							src={bigVideoBlack}
-							mediaMaxWidth={3000}
-							mediaMinWidth={1201}
-						/>
-						<Source
-							src={smallVideoBlack}
-							mediaMaxWidth={1200}
-							mediaMinWidth={300}
-						/>
-					</Video>
+					{darkMode && (
+						<Video>
+							<Source
+								src={bigVideoBlack}
+								mediaMaxWidth={3000}
+								mediaMinWidth={1201}
+							/>
+							<Source
+								src={smallVideoBlack}
+								mediaMaxWidth={1200}
+								mediaMinWidth={300}
+							/>
+						</Video>
+					)}
+
+					{!darkMode && (
+						<Video>
+							<Source
+								src={bigVideoWhite}
+								mediaMaxWidth={3000}
+								mediaMinWidth={1201}
+							/>
+							<Source
+								src={smallVideoWhite}
+								mediaMaxWidth={1200}
+								mediaMinWidth={300}
+							/>
+						</Video>
+					)}
 
 					{!isTextShown && (
 						<Styled.Button
+							darkMode={darkMode}
 							onMouseEnter={onSoundButtonHover}
 							onClick={onSoundButtonClick}
 						>
 							Click me
 						</Styled.Button>
 					)}
-					<Styled.TextContainer>
+					<Styled.TextContainer darkMode={darkMode}>
 						{isTextShown && (
 							<TypeIt
 								getBeforeInit={(instance) => {
 									instance
 										.type('Hi! Kixill')
-										.pause(350)
+										.pause(450)
 										.move(-3)
-										.pause(250)
+										.pause(350)
 										.delete(1)
-										.pause(400)
+										.pause(420)
 										.type('r')
 										.pause(450)
 										.move(3)
-										.pause(250)
+										.pause(300)
 										.type(' Here.')
 										.pause(2100)
 										.delete(20)
@@ -101,7 +123,7 @@ const HeroSection: FC = () => {
 										.move(-13)
 										.type('ce')
 										.move(5)
-										.pause(250)
+										.pause(350)
 										.delete(1)
 										.type('m')
 										.move(15);

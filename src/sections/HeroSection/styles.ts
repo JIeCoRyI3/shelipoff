@@ -1,18 +1,22 @@
+import ThemeType from 'helpers/types/ThemeType';
 import styled from 'styled-components';
 
-export const TextContainer = styled.div`
+export const TextContainer = styled.div<ThemeType>`
 	position: absolute;
 	width: fit-content;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 90px;
-	font-family: 'BioRhyme', serif;
-	font-family: 'Stint Ultra Expanded', cursive;
-	font-weight: bold;
+	font-size: 100px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
 	text-transform: uppercase;
-	color: white;
 	z-index: 3;
+
+	& * {
+		color: ${(props) =>
+		props.darkMode ? 'white' : 'black'};
+	}
 `;
 
 export const HeroSection = styled.section`
@@ -33,18 +37,19 @@ export const Space = styled.section`
 	height: 100vh;
 `;
 
-export const Button = styled.button`
-	font-size: 20px;
-	color: white;
-	font-family: 'BioRhyme', serif;
-	font-family: 'Stint Ultra Expanded', cursive;
+export const Button = styled.button<ThemeType>`
+	font-size: 30px;
+	color: ${(props) =>
+		props.darkMode ? 'white' : 'black'};
+	font-family: 'Roboto Mono', monospace;
 	font-weight: bold;
 	text-transform: uppercase;
 	position: absolute;
 	width: 180px;
 	height: 180px;
 	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: ${(props) =>
+		props.darkMode ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 255, 255, 0.2)'};
 	top: 50%;
 	left: 50%;
 	border-radius: 50%;
@@ -56,22 +61,30 @@ export const Button = styled.button`
 	transform-origin: center;
 
 	&:hover {
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: ${(props) =>
+			props.darkMode ? 'rgba(0, 0, 0, 0.6)' : 'rgba(255, 255, 255, 0.6)'};
 		transform: translate(-50%, -50%) scale(1.2);
 	}
 
+	box-shadow: ${props => !props.darkMode ? `
+		0 0 0 0px transparent, 0 0 0 0px rgba(0, 0, 0, 0.1),
+		0 0 0 0px transparent, 0 0 0 0px rgba(0, 0, 0, 0.2),
+		0 0 0 0px transparent, 0 0 0 0px rgba(0, 0, 0, 0.4),
+		0 0 0 0px transparent, 0 0 0 0px rgba(0, 0, 0, 0.6);
+	` : `
+		0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.1),
+		0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.2),
+		0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.4),
+		0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.6);
+	}
+	`};	
+
 	@keyframes ripple {
-		0% {
-			box-shadow: 0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.1),
-				0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.2),
-				0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.4),
-				0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.6);
-		}
 		100% {
-			box-shadow: 0 0 0 15px transparent, 0 0 0 17px rgba(255, 255, 255, 0),
-				0 0 0 40px transparent, 0 0 0 42px rgba(255, 255, 255, 0),
-				0 0 0 90px transparent, 0 0 0 92px rgba(255, 255, 255, 0),
-				0 0 0 125px transparent, 0 0 0 127px rgba(255, 255, 255, 0);
+			box-shadow: 0 0 0 15px transparent, 0 0 0 17px transparent,
+				0 0 0 40px transparent, 0 0 0 42px transparent,
+				0 0 0 90px transparent, 0 0 0 92px transparent,
+				0 0 0 125px transparent, 0 0 0 127px transparent;
 		}
 	}
 `;

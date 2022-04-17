@@ -1,13 +1,24 @@
-import React, { FC } from 'react';
-import HeroSection from 'sections/HeroSection/HeroSection';
+import Home from 'pages/Home';
+import React, { createContext, FC, useState } from 'react';
 
 import * as Styled from './styles';
 
+export const ColorMode = createContext({ darkMode: true, toggle: () => {} });
+
 const App: FC = () => {
+	const [darkMode, setDarkMode] = useState<boolean>(true);
+
 	return (
-		<Styled.App>
-			<HeroSection />
-		</Styled.App>
+		<ColorMode.Provider
+			value={{
+				darkMode,
+				toggle: () => setDarkMode((d) => !d),
+			}}
+		>
+			<Styled.App darkMode={darkMode}>
+				<Home />
+			</Styled.App>
+		</ColorMode.Provider>
 	);
 };
 
