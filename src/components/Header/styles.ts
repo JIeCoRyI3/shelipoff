@@ -1,3 +1,4 @@
+import ThemeType from 'helpers/types/ThemeType';
 import styled from 'styled-components';
 
 export const Link = styled.a`
@@ -9,7 +10,7 @@ export const Link = styled.a`
 	cursor: pointer;
 `;
 
-export const Header = styled.header<{ darkMode: boolean }>`
+export const Header = styled.header<ThemeType>`
 	position: fixed;
 	width: 100vw;
 	height: 40px;
@@ -46,7 +47,7 @@ export const Rightside = styled.nav`
 	height: 100%;
 `;
 
-export const SVG = styled.div<{ darkMode: boolean }>`
+export const SVG = styled.div<ThemeType>`
 	display: flex;
 	width: 50px;
 	height: 100%;

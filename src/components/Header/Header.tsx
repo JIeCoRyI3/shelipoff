@@ -1,4 +1,4 @@
-import { Context } from 'App';
+import { ColorMode } from 'App';
 import React, { FC, useContext } from 'react';
 import DarkIcon from 'resources/images/darkMode.svg?component';
 import LightIcon from 'resources/images/lightMode.svg?component';
@@ -6,7 +6,7 @@ import LightIcon from 'resources/images/lightMode.svg?component';
 import * as Styled from './styles';
 
 const Header: FC = () => {
-	const { darkMode, toggle } = useContext(Context);
+	const { darkMode, toggle } = useContext(ColorMode);
 
 	return (
 		<Styled.Header darkMode={darkMode}>

@@ -3,22 +3,22 @@ import React, { createContext, FC, useState } from 'react';
 
 import * as Styled from './styles';
 
-export const Context = createContext({ darkMode: true, toggle: () => {} });
+export const ColorMode = createContext({ darkMode: true, toggle: () => {} });
 
 const App: FC = () => {
 	const [darkMode, setDarkMode] = useState<boolean>(true);
 
 	return (
-		<Context.Provider
+		<ColorMode.Provider
 			value={{
 				darkMode,
 				toggle: () => setDarkMode((d) => !d),
 			}}
 		>
-			<Styled.App>
+			<Styled.App darkMode={darkMode}>
 				<Home />
 			</Styled.App>
-		</Context.Provider>
+		</ColorMode.Provider>
 	);
 };
 

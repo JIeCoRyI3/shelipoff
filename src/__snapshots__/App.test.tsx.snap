@@ -3,7 +3,7 @@
 exports[`App Component should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .c5 {
+  "baseElement": .c6 {
   font-family: 'Fredoka One',cursive;
   font-size: 20px;
   margin-right: 80px;
@@ -13,7 +13,7 @@ Object {
   cursor: pointer;
 }
 
-.c1 {
+.c2 {
   position: fixed;
   width: 100vw;
   height: 40px;
@@ -34,11 +34,11 @@ Object {
   background-color: rgba(0,0,0,0.2);
 }
 
-.c1 .c4 {
+.c2 .c5 {
   color: white;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -55,14 +55,14 @@ Object {
   height: 100%;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,7 +74,7 @@ Object {
   height: 100%;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -84,32 +84,33 @@ Object {
   overflow: hidden;
 }
 
-.c7 > * {
+.c8 > * {
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-.c7 > *:nth-child(1) {
+.c8 > *:nth-child(1) {
   -webkit-transform: scale(0.2) translateY(-77%);
   -ms-transform: scale(0.2) translateY(-77%);
   transform: scale(0.2) translateY(-77%);
 }
 
-.c7 > *:nth-child(2) {
+.c8 > *:nth-child(2) {
   margin-left: -100%;
   -webkit-transform: scale(0.6) translateY(-77%);
   -ms-transform: scale(0.6) translateY(-77%);
   transform: scale(0.6) translateY(-77%);
 }
 
-.c11 {
+.c12 {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  opacity: 0.2;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -123,29 +124,32 @@ Object {
   font-family: 'Roboto Mono',monospace;
   font-weight: 400;
   text-transform: uppercase;
-  color: white;
   z-index: 3;
 }
 
-.c9 {
+.c14 * {
+  color: white;
+}
+
+.c10 {
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
 }
 
-.c10 {
+.c11 {
   position: relative;
   height: 100vh;
   width: 100vw;
 }
 
-.c8 {
+.c9 {
   width: 100vw;
   height: 100vh;
 }
 
-.c12 {
+.c13 {
   font-size: 30px;
   color: white;
   font-family: 'Roboto Mono',monospace;
@@ -171,64 +175,68 @@ Object {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
+  box-shadow: 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.1), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.2), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.4), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.6);
 }
 
-.c12:hover {
+.c13:hover {
   background-color: rgba(0,0,0,0.6);
   -webkit-transform: translate(-50%,-50%) scale(1.2);
   -ms-transform: translate(-50%,-50%) scale(1.2);
   transform: translate(-50%,-50%) scale(1.2);
 }
 
-.c0 {
+.c1 {
   min-height: 500vh;
-  background-color: grey;
   width: 100vw;
+}
+
+.c0 {
+  background-color: black;
 }
 
 <body>
     <div>
       <div
-        class=""
+        class="c0"
       >
         <main
-          class="c0"
+          class="c1"
         >
           <header
-            class="c1"
+            class="c2"
           >
             <div
-              class="c2"
+              class="c3"
             >
               <nav
-                class="c3"
+                class="c4"
               >
                 <a
-                  class="c4 c5"
+                  class="c5 c6"
                 >
                   Home
                 </a>
                 <a
-                  class="c4 c5"
+                  class="c5 c6"
                 >
                   PX Switch
                 </a>
                 <a
-                  class="c4 c5"
+                  class="c5 c6"
                 >
                   Interview FAQ
                 </a>
               </nav>
               <nav
-                class="c6"
+                class="c7"
               >
                 <a
-                  class="c4 c5"
+                  class="c5 c6"
                 >
                   Home
                 </a>
                 <div
-                  class="c7"
+                  class="c8"
                 >
                   <svgrurl />
                   <svgrurl />
@@ -237,18 +245,18 @@ Object {
             </div>
           </header>
           <section
-            class="c8"
+            class="c9"
           />
           <section
-            class="c9"
+            class="c10"
             tabindex="0"
           >
             <div
-              class="c10"
+              class="c11"
             >
               <video
                 autoplay=""
-                class="c11"
+                class="c12"
                 loop=""
               >
                 <source
@@ -257,12 +265,12 @@ Object {
                 />
               </video>
               <button
-                class="c12"
+                class="c13"
               >
                 Click me
               </button>
               <div
-                class="c13"
+                class="c14"
               />
             </div>
           </section>
@@ -270,7 +278,7 @@ Object {
       </div>
     </div>
   </body>,
-  "container": .c5 {
+  "container": .c6 {
   font-family: 'Fredoka One',cursive;
   font-size: 20px;
   margin-right: 80px;
@@ -280,7 +288,7 @@ Object {
   cursor: pointer;
 }
 
-.c1 {
+.c2 {
   position: fixed;
   width: 100vw;
   height: 40px;
@@ -301,11 +309,11 @@ Object {
   background-color: rgba(0,0,0,0.2);
 }
 
-.c1 .c4 {
+.c2 .c5 {
   color: white;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -322,14 +330,14 @@ Object {
   height: 100%;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -341,7 +349,7 @@ Object {
   height: 100%;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -351,32 +359,33 @@ Object {
   overflow: hidden;
 }
 
-.c7 > * {
+.c8 > * {
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-.c7 > *:nth-child(1) {
+.c8 > *:nth-child(1) {
   -webkit-transform: scale(0.2) translateY(-77%);
   -ms-transform: scale(0.2) translateY(-77%);
   transform: scale(0.2) translateY(-77%);
 }
 
-.c7 > *:nth-child(2) {
+.c8 > *:nth-child(2) {
   margin-left: -100%;
   -webkit-transform: scale(0.6) translateY(-77%);
   -ms-transform: scale(0.6) translateY(-77%);
   transform: scale(0.6) translateY(-77%);
 }
 
-.c11 {
+.c12 {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
+  opacity: 0.2;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -390,29 +399,32 @@ Object {
   font-family: 'Roboto Mono',monospace;
   font-weight: 400;
   text-transform: uppercase;
-  color: white;
   z-index: 3;
 }
 
-.c9 {
+.c14 * {
+  color: white;
+}
+
+.c10 {
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
 }
 
-.c10 {
+.c11 {
   position: relative;
   height: 100vh;
   width: 100vw;
 }
 
-.c8 {
+.c9 {
   width: 100vw;
   height: 100vh;
 }
 
-.c12 {
+.c13 {
   font-size: 30px;
   color: white;
   font-family: 'Roboto Mono',monospace;
@@ -438,63 +450,67 @@ Object {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
+  box-shadow: 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.1), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.2), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.4), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.6);
 }
 
-.c12:hover {
+.c13:hover {
   background-color: rgba(0,0,0,0.6);
   -webkit-transform: translate(-50%,-50%) scale(1.2);
   -ms-transform: translate(-50%,-50%) scale(1.2);
   transform: translate(-50%,-50%) scale(1.2);
 }
 
-.c0 {
+.c1 {
   min-height: 500vh;
-  background-color: grey;
   width: 100vw;
+}
+
+.c0 {
+  background-color: black;
 }
 
 <div>
     <div
-      class=""
+      class="c0"
     >
       <main
-        class="c0"
+        class="c1"
       >
         <header
-          class="c1"
+          class="c2"
         >
           <div
-            class="c2"
+            class="c3"
           >
             <nav
-              class="c3"
+              class="c4"
             >
               <a
-                class="c4 c5"
+                class="c5 c6"
               >
                 Home
               </a>
               <a
-                class="c4 c5"
+                class="c5 c6"
               >
                 PX Switch
               </a>
               <a
-                class="c4 c5"
+                class="c5 c6"
               >
                 Interview FAQ
               </a>
             </nav>
             <nav
-              class="c6"
+              class="c7"
             >
               <a
-                class="c4 c5"
+                class="c5 c6"
               >
                 Home
               </a>
               <div
-                class="c7"
+                class="c8"
               >
                 <svgrurl />
                 <svgrurl />
@@ -503,18 +519,18 @@ Object {
           </div>
         </header>
         <section
-          class="c8"
+          class="c9"
         />
         <section
-          class="c9"
+          class="c10"
           tabindex="0"
         >
           <div
-            class="c10"
+            class="c11"
           >
             <video
               autoplay=""
-              class="c11"
+              class="c12"
               loop=""
             >
               <source
@@ -523,12 +539,12 @@ Object {
               />
             </video>
             <button
-              class="c12"
+              class="c13"
             >
               Click me
             </button>
             <div
-              class="c13"
+              class="c14"
             />
           </div>
         </section>
