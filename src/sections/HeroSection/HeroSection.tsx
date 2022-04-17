@@ -71,7 +71,7 @@ const HeroSection: FC = () => {
 							mediaMinWidth={300}
 						/>
 					</Video>
-				
+
 					<Video>
 						<Source
 							src={bigVideoWhite}

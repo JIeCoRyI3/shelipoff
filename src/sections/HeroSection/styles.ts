@@ -16,8 +16,7 @@ export const TextContainer = styled.div<ThemeType>`
 
 	& * {
 		transition: 0.4s;
-		color: ${(props) =>
-		props.darkMode ? 'white' : 'black'} !important;
+		color: ${(props) => (props.darkMode ? 'white' : 'black')} !important;
 	}
 `;
 
@@ -41,11 +40,11 @@ export const RelativeContainer = styled.div<ThemeType>`
 	}
 
 	& ${Video}:first-of-type {
-		opacity: ${props => props.darkMode ? 0.3 : 0};
+		opacity: ${(props) => (props.darkMode ? 0.3 : 0)};
 	}
 
 	& ${Video}:not(:first-of-type) {
-		opacity: ${props => props.darkMode ? 0 : 0.3};
+		opacity: ${(props) => (props.darkMode ? 0 : 0.3)};
 	}
 `;
 
@@ -56,8 +55,7 @@ export const Space = styled.section`
 
 export const Button = styled.button<ThemeType>`
 	font-size: 30px;
-	color: ${(props) =>
-		props.darkMode ? 'white' : 'black'};
+	color: ${(props) => (props.darkMode ? 'white' : 'black')};
 	font-family: 'Roboto Mono', monospace;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -83,25 +81,27 @@ export const Button = styled.button<ThemeType>`
 		transform: translate(-50%, -50%) scale(1.2);
 	}
 
-	box-shadow: ${props => !props.darkMode ? `
+	box-shadow: ${(props) =>
+		!props.darkMode
+			? `
 		0 0 0 0px transparent, 0 0 0 0px rgba(0, 0, 0, 0.1),
 		0 0 0 0px transparent, 0 0 0 0px rgba(0, 0, 0, 0.2),
 		0 0 0 0px transparent, 0 0 0 0px rgba(0, 0, 0, 0.4),
 		0 0 0 0px transparent, 0 0 0 0px rgba(0, 0, 0, 0.6);
-	` : `
+	`
+			: `
 		0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.1),
 		0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.2),
 		0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.4),
 		0 0 0 0px transparent, 0 0 0 0px rgba(255, 255, 255, 0.6);
 	}
-	`};	
+	`};
 
 	@keyframes ripple {
 		100% {
 			box-shadow: 0 0 0 15px transparent, 0 0 0 17px transparent,
-				0 0 0 40px transparent, 0 0 0 42px transparent,
-				0 0 0 90px transparent, 0 0 0 92px transparent,
-				0 0 0 125px transparent, 0 0 0 127px transparent;
+				0 0 0 40px transparent, 0 0 0 42px transparent, 0 0 0 90px transparent,
+				0 0 0 92px transparent, 0 0 0 125px transparent, 0 0 0 127px transparent;
 		}
 	}
 `;
