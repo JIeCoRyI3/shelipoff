@@ -3,7 +3,7 @@
 exports[`App Component should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .c6 {
+  "baseElement": .c10 {
   font-family: 'Fredoka One',cursive;
   font-size: 20px;
   margin-right: 80px;
@@ -11,6 +11,39 @@ Object {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
+}
+
+.c13 {
+  color: white;
+  font-size: 25px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-right: 10px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.c5 {
+  border: none;
+  background-color: transparent;
+  display: none;
+  font-size: 32px;
+  margin-top: -10px;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c8 {
+  border: none;
+  background-color: transparent;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: -32px;
+  margin-top: -12px;
+  display: none;
+  font-size: 32px;
 }
 
 .c2 {
@@ -28,13 +61,17 @@ Object {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 20px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   background-color: rgba(0,0,0,0.2);
 }
 
-.c2 .c5 {
+.c2 *:is(.c9,.c4,.c12) {
   color: white;
 }
 
@@ -55,14 +92,20 @@ Object {
   height: 100%;
 }
 
-.c4 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.c7 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,7 +117,7 @@ Object {
   height: 100%;
 }
 
-.c8 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -84,32 +127,32 @@ Object {
   overflow: hidden;
 }
 
-.c8 > * {
+.c14 > * {
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-.c8 > *:nth-child(1) {
+.c14 > *:nth-child(1) {
   -webkit-transform: scale(0.2) translateY(-77%);
   -ms-transform: scale(0.2) translateY(-77%);
   transform: scale(0.2) translateY(-77%);
 }
 
-.c8 > *:nth-child(2) {
+.c14 > *:nth-child(2) {
   margin-left: -100%;
   -webkit-transform: scale(0.6) translateY(-77%);
   -ms-transform: scale(0.6) translateY(-77%);
   transform: scale(0.6) translateY(-77%);
 }
 
-.c13 {
+.c19 {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
 }
 
-.c15 {
+.c21 {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -126,26 +169,26 @@ Object {
   z-index: 3;
 }
 
-.c15 * {
+.c21 * {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   color: white !important;
 }
 
-.c10 {
+.c16 {
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
 }
 
-.c11 {
+.c17 {
   position: relative;
   height: 100vh;
   width: 100vw;
 }
 
-.c11 .c12 {
+.c17 .c18 {
   position: absolute;
   top: 0;
   left: 0;
@@ -153,20 +196,20 @@ Object {
   transition: 1s;
 }
 
-.c11 .c12:first-of-type {
+.c17 .c18:first-of-type {
   opacity: 0.3;
 }
 
-.c11 .c12:not(:first-of-type) {
+.c17 .c18:not(:first-of-type) {
   opacity: 0;
 }
 
-.c9 {
+.c15 {
   width: 100vw;
   height: 100vh;
 }
 
-.c14 {
+.c20 {
   font-size: 30px;
   color: white;
   font-family: 'Roboto Mono',monospace;
@@ -195,7 +238,7 @@ Object {
   box-shadow: 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.1), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.2), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.4), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.6);
 }
 
-.c14:hover {
+.c20:hover {
   background-color: rgba(0,0,0,0.6);
   -webkit-transform: translate(-50%,-50%) scale(1.2);
   -ms-transform: translate(-50%,-50%) scale(1.2);
@@ -211,6 +254,43 @@ Object {
   -webkit-transition: 1s;
   transition: 1s;
   background-color: black;
+}
+
+@media screen and (max-width:970px) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media screen and (max-width:970px) {
+  .c6 {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: -100vw;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: black;
+    z-index: 99;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+
+  .c6 .c9 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .c6 .c7 {
+    display: block;
+    color: white;
+  }
 }
 
 <body>
@@ -227,55 +307,79 @@ Object {
             <div
               class="c3"
             >
-              <nav
-                class="c4"
+              <button
+                class="c4 c5"
               >
+                ☰
+              </button>
+              <nav
+                class="c6"
+              >
+                <button
+                  class="c7 c8"
+                >
+                  🗙
+                </button>
                 <a
-                  class="c5 c6"
+                  class="c9 c10"
                 >
                   Home
                 </a>
                 <a
-                  class="c5 c6"
+                  class="c9 c10"
                 >
                   PX Switch
                 </a>
                 <a
-                  class="c5 c6"
+                  class="c9 c10"
                 >
                   Interview FAQ
                 </a>
               </nav>
               <nav
-                class="c7"
+                class="c11"
               >
-                <a
-                  class="c5 c6"
-                >
-                  Home
-                </a>
                 <div
-                  class="c8"
+                  class="c12 c13"
                 >
-                  <svgrurl />
-                  <svgrurl />
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-volume-high "
+                    data-icon="volume-high"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    viewBox="0 0 640 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M412.6 182c-10.28-8.334-25.41-6.867-33.75 3.402c-8.406 10.24-6.906 25.35 3.375 33.74C393.5 228.4 400 241.8 400 255.1c0 14.17-6.5 27.59-17.81 36.83c-10.28 8.396-11.78 23.5-3.375 33.74c4.719 5.806 11.62 8.802 18.56 8.802c5.344 0 10.75-1.779 15.19-5.399C435.1 311.5 448 284.6 448 255.1S435.1 200.4 412.6 182zM473.1 108.2c-10.22-8.334-25.34-6.898-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C476.6 172.1 496 213.3 496 255.1s-19.44 82.1-53.31 110.7c-10.25 8.396-11.75 23.5-3.344 33.74c4.75 5.775 11.62 8.771 18.56 8.771c5.375 0 10.75-1.779 15.22-5.431C518.2 366.9 544 313 544 255.1S518.2 145 473.1 108.2zM534.4 33.4c-10.22-8.334-25.34-6.867-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C559.9 116.3 592 183.9 592 255.1s-32.09 139.7-88.06 185.5c-10.25 8.396-11.75 23.5-3.344 33.74C505.3 481 512.2 484 519.2 484c5.375 0 10.75-1.779 15.22-5.431C601.5 423.6 640 342.5 640 255.1S601.5 88.34 534.4 33.4zM301.2 34.98c-11.5-5.181-25.01-3.076-34.43 5.29L131.8 160.1H48c-26.51 0-48 21.48-48 47.96v95.92c0 26.48 21.49 47.96 48 47.96h83.84l134.9 119.8C272.7 477 280.3 479.8 288 479.8c4.438 0 8.959-.9314 13.16-2.835C312.7 471.8 320 460.4 320 447.9V64.12C320 51.55 312.7 40.13 301.2 34.98z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="c14"
+                >
+                  <span />
+                  <span />
                 </div>
               </nav>
             </div>
           </header>
           <section
-            class="c9"
+            class="c15"
           />
           <section
-            class="c10"
+            class="c16"
             tabindex="0"
           >
             <div
-              class="c11"
+              class="c17"
             >
               <video
                 autoplay=""
-                class="c12 c13"
+                class="c18 c19"
                 loop=""
               >
                 <source
@@ -285,7 +389,7 @@ Object {
               </video>
               <video
                 autoplay=""
-                class="c12 c13"
+                class="c18 c19"
                 loop=""
               >
                 <source
@@ -294,12 +398,12 @@ Object {
                 />
               </video>
               <button
-                class="c14"
+                class="c20"
               >
                 Click me
               </button>
               <div
-                class="c15"
+                class="c21"
               />
             </div>
           </section>
@@ -307,7 +411,7 @@ Object {
       </div>
     </div>
   </body>,
-  "container": .c6 {
+  "container": .c10 {
   font-family: 'Fredoka One',cursive;
   font-size: 20px;
   margin-right: 80px;
@@ -315,6 +419,39 @@ Object {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
+}
+
+.c13 {
+  color: white;
+  font-size: 25px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-right: 10px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.c5 {
+  border: none;
+  background-color: transparent;
+  display: none;
+  font-size: 32px;
+  margin-top: -10px;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c8 {
+  border: none;
+  background-color: transparent;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: -32px;
+  margin-top: -12px;
+  display: none;
+  font-size: 32px;
 }
 
 .c2 {
@@ -332,13 +469,17 @@ Object {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 20px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   background-color: rgba(0,0,0,0.2);
 }
 
-.c2 .c5 {
+.c2 *:is(.c9,.c4,.c12) {
   color: white;
 }
 
@@ -359,14 +500,20 @@ Object {
   height: 100%;
 }
 
-.c4 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.c7 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -378,7 +525,7 @@ Object {
   height: 100%;
 }
 
-.c8 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -388,32 +535,32 @@ Object {
   overflow: hidden;
 }
 
-.c8 > * {
+.c14 > * {
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-.c8 > *:nth-child(1) {
+.c14 > *:nth-child(1) {
   -webkit-transform: scale(0.2) translateY(-77%);
   -ms-transform: scale(0.2) translateY(-77%);
   transform: scale(0.2) translateY(-77%);
 }
 
-.c8 > *:nth-child(2) {
+.c14 > *:nth-child(2) {
   margin-left: -100%;
   -webkit-transform: scale(0.6) translateY(-77%);
   -ms-transform: scale(0.6) translateY(-77%);
   transform: scale(0.6) translateY(-77%);
 }
 
-.c13 {
+.c19 {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
 }
 
-.c15 {
+.c21 {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -430,26 +577,26 @@ Object {
   z-index: 3;
 }
 
-.c15 * {
+.c21 * {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   color: white !important;
 }
 
-.c10 {
+.c16 {
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
 }
 
-.c11 {
+.c17 {
   position: relative;
   height: 100vh;
   width: 100vw;
 }
 
-.c11 .c12 {
+.c17 .c18 {
   position: absolute;
   top: 0;
   left: 0;
@@ -457,20 +604,20 @@ Object {
   transition: 1s;
 }
 
-.c11 .c12:first-of-type {
+.c17 .c18:first-of-type {
   opacity: 0.3;
 }
 
-.c11 .c12:not(:first-of-type) {
+.c17 .c18:not(:first-of-type) {
   opacity: 0;
 }
 
-.c9 {
+.c15 {
   width: 100vw;
   height: 100vh;
 }
 
-.c14 {
+.c20 {
   font-size: 30px;
   color: white;
   font-family: 'Roboto Mono',monospace;
@@ -499,7 +646,7 @@ Object {
   box-shadow: 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.1), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.2), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.4), 0 0 0 0px transparent,0 0 0 0px rgba(255,255,255,0.6);
 }
 
-.c14:hover {
+.c20:hover {
   background-color: rgba(0,0,0,0.6);
   -webkit-transform: translate(-50%,-50%) scale(1.2);
   -ms-transform: translate(-50%,-50%) scale(1.2);
@@ -517,6 +664,43 @@ Object {
   background-color: black;
 }
 
+@media screen and (max-width:970px) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media screen and (max-width:970px) {
+  .c6 {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: -100vw;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: black;
+    z-index: 99;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+
+  .c6 .c9 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .c6 .c7 {
+    display: block;
+    color: white;
+  }
+}
+
 <div>
     <div
       class="c0"
@@ -530,55 +714,79 @@ Object {
           <div
             class="c3"
           >
-            <nav
-              class="c4"
+            <button
+              class="c4 c5"
             >
+              ☰
+            </button>
+            <nav
+              class="c6"
+            >
+              <button
+                class="c7 c8"
+              >
+                🗙
+              </button>
               <a
-                class="c5 c6"
+                class="c9 c10"
               >
                 Home
               </a>
               <a
-                class="c5 c6"
+                class="c9 c10"
               >
                 PX Switch
               </a>
               <a
-                class="c5 c6"
+                class="c9 c10"
               >
                 Interview FAQ
               </a>
             </nav>
             <nav
-              class="c7"
+              class="c11"
             >
-              <a
-                class="c5 c6"
-              >
-                Home
-              </a>
               <div
-                class="c8"
+                class="c12 c13"
               >
-                <svgrurl />
-                <svgrurl />
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-volume-high "
+                  data-icon="volume-high"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M412.6 182c-10.28-8.334-25.41-6.867-33.75 3.402c-8.406 10.24-6.906 25.35 3.375 33.74C393.5 228.4 400 241.8 400 255.1c0 14.17-6.5 27.59-17.81 36.83c-10.28 8.396-11.78 23.5-3.375 33.74c4.719 5.806 11.62 8.802 18.56 8.802c5.344 0 10.75-1.779 15.19-5.399C435.1 311.5 448 284.6 448 255.1S435.1 200.4 412.6 182zM473.1 108.2c-10.22-8.334-25.34-6.898-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C476.6 172.1 496 213.3 496 255.1s-19.44 82.1-53.31 110.7c-10.25 8.396-11.75 23.5-3.344 33.74c4.75 5.775 11.62 8.771 18.56 8.771c5.375 0 10.75-1.779 15.22-5.431C518.2 366.9 544 313 544 255.1S518.2 145 473.1 108.2zM534.4 33.4c-10.22-8.334-25.34-6.867-33.78 3.34c-8.406 10.24-6.906 25.35 3.344 33.74C559.9 116.3 592 183.9 592 255.1s-32.09 139.7-88.06 185.5c-10.25 8.396-11.75 23.5-3.344 33.74C505.3 481 512.2 484 519.2 484c5.375 0 10.75-1.779 15.22-5.431C601.5 423.6 640 342.5 640 255.1S601.5 88.34 534.4 33.4zM301.2 34.98c-11.5-5.181-25.01-3.076-34.43 5.29L131.8 160.1H48c-26.51 0-48 21.48-48 47.96v95.92c0 26.48 21.49 47.96 48 47.96h83.84l134.9 119.8C272.7 477 280.3 479.8 288 479.8c4.438 0 8.959-.9314 13.16-2.835C312.7 471.8 320 460.4 320 447.9V64.12C320 51.55 312.7 40.13 301.2 34.98z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                class="c14"
+              >
+                <span />
+                <span />
               </div>
             </nav>
           </div>
         </header>
         <section
-          class="c9"
+          class="c15"
         />
         <section
-          class="c10"
+          class="c16"
           tabindex="0"
         >
           <div
-            class="c11"
+            class="c17"
           >
             <video
               autoplay=""
-              class="c12 c13"
+              class="c18 c19"
               loop=""
             >
               <source
@@ -588,7 +796,7 @@ Object {
             </video>
             <video
               autoplay=""
-              class="c12 c13"
+              class="c18 c19"
               loop=""
             >
               <source
@@ -597,12 +805,12 @@ Object {
               />
             </video>
             <button
-              class="c14"
+              class="c20"
             >
               Click me
             </button>
             <div
-              class="c15"
+              class="c21"
             />
           </div>
         </section>
