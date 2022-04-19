@@ -116,7 +116,7 @@ var S=Object.defineProperty;var b=Object.getOwnPropertySymbols;var C=Object.prot
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
-`,h=({children:e})=>(t.exports.useEffect(()=>{_(e,h.name,u.name)},[]),n.createElement(g,{autoPlay:!0,muted:!0,loop:!0},e));var X="/assets/keyboard-sound.2985eba1.mp3",K="/assets/big-video-black.5e7dcfe0.mp4",Y="/assets/big-video-white.6ffcab15.mp4",q="/assets/small-video-black.c5d10b2a.mp4",G="/assets/small-video-white.487392f0.mp4";const Q=s.div`
+`,h=({children:e})=>(t.exports.useEffect(()=>{_(e,h.name,u.name)},[]),n.createElement(g,{autoPlay:!0,muted:!0,loop:!0},e));var X="./assets/keyboard-sound.2985eba1.mp3",K="./assets/big-video-black.5e7dcfe0.mp4",Y="./assets/big-video-white.6ffcab15.mp4",q="./assets/small-video-black.c5d10b2a.mp4",G="./assets/small-video-white.487392f0.mp4";const Q=s.div`
 	position: absolute;
 	width: fit-content;
 	top: 50%;
